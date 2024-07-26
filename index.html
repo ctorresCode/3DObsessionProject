@@ -1,13 +1,251 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Obsession</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="components/header.js" type="text/javascript"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="components/footer.js"></script>
+
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <main-header></main-header>
+    <!-- Slider -->
+    <div data-hs-carousel='{
+      "loadingClasses": "opacity-0",
+      "isAutoPlay": true
+    }' class="relative mb-5">
+    <div class="hs-carousel relative overflow-hidden w-full min-h-96 bg-white">
+      <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-100 p-6" id="slide1">
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-100 p-6" id="slide2" style="background-image: url(/images/HouseModel3.jpeg);">
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-100 p-6" id="slide3" style="background-image: url(/images/NeonCity.jpg);">
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-100 p-6" id="slide4" style="background-image: url(/images/PlayerModel5.jpg);">
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full bg-gray-100 p-6" id="slide5" style="background-image: url(/images/TvModel.jpg);">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-s-lg">
+      <span class="text-2xl" aria-hidden="true">
+        <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+      </span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button type="button" class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-e-lg">
+      <span class="sr-only">Next</span>
+      <span class="text-2xl" aria-hidden="true">
+        <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m9 18 6-6-6-6"></path>
+        </svg>
+      </span>
+    </button>
+
+    <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
+      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
+      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
+      <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer"></span>
+    </div>
+    </div>
+    <!-- End Slider -->
+
+    <div class="flex flex-col sm:flex-row container mx-auto mt-5 p-6 sm:justify-center mb-5">
+      <div class="sm:col-span-3 sm:px-5 mb-3">
+        <div class="mt-2">
+          <select id="country" name="country" autocomplete="country-name" class="block w-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+            <option>Category project</option>
+            <option>Canada</option>
+            <option>Mexico</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sm:col-span-3 sm:px-5 mb-3">
+        <div class="mt-2">
+          <select id="country" name="country" autocomplete="country-name" class="block w-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+            <option>Styles project</option>
+            <option>Canada</option>
+            <option>Mexico</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="bg-[#468585] h-12 sm:px-5 py-2 text-lg font-medium text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Search</button>
+    </div>
+
+    <!--Cartas-->
+    <div>
+      <h3 class="text-xl text-black font-bold">Project List</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+          <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Old TV 1940
+            </h3>
+            <p class="p-0 text-start">
+              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="relative">
+      <button type="submit" class="bg-[#ffc8004e] w-auto h-14 px-10 my-20 sm:px-5 py-2 text-lg text-black font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Load more projects</button>
+    </div>
+      
+
+
+   
+    
+    <main-footer></main-footer>
+  <script src="index.js"></script>
+
   </body>
 </html>
