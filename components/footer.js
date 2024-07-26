@@ -30,18 +30,7 @@ class Footer extends HTMLElement {
           <h5 class="text-uppercase">Links</h5>
   
           <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
+            
           </ul>
   
         </div>
@@ -54,15 +43,7 @@ class Footer extends HTMLElement {
           <h5 class="text-uppercase">Links</h5>
   
           <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
+            
             <li>
               <a href="#!">Link 4</a>
             </li>
