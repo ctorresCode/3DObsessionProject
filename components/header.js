@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
-            <nav class="bg-[#50B498]">
+            <nav class="bg-[#50B498] shadow-md shadow-gray-400">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-24 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
