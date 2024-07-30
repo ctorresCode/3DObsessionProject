@@ -42,9 +42,9 @@ class Header extends HTMLElement {
         </button>
       </div>
       <div class="flex flex-1 items-center justify-end sm:items-stretch sm:justify-start">
-        <span class="justify-end pr-3 mt-1 text-xl font-bold">3D Obsession</span>
-        <div class="hidden sm:ml-6 sm:block md:ml-[550px]">
-          <div class="flex space-x-14">
+        <span class="pr-3 mt-1 text-xl font-bold">3D Obsession</span>
+        <div class="hidden md:block md:ml-[325px] lg:ml-[550px]">
+          <div class="flex">
             <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-gray-700 hover:text-white" -->
             <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Home</a>
             <a href="humanresources.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Human Resources</a>

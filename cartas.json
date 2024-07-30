@@ -1,0 +1,57 @@
+{
+    "cartas":[
+        {
+            "id": "1",
+            "image": "/images/TvModel.jpg",
+            "title": "Old TV 1940",
+            "description": "This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.",
+            "state": "Finish",
+            "promoter": "Eimy Roger",
+            "creator": "Emma Myers",
+            "startdate": "November 23, 2023"
+        },
+        {
+            "id": "2",
+            "image": "/images/LowPolyModel2.jpg",
+            "title": "Low Poly Landscape",
+            "description": "This is a low polygon landscape made in blender by our collaborator Junior Mersel.",
+            "state": "Starting",
+            "promoter": "Adriana Lorde",
+            "creator": "Guillermo Ortiz",
+            "startDate": "January 2, 2023"
+        },
+
+        {
+            "id": "3",
+            "image": "/images/HouseModel3.jpg",
+            "title": "Stylized house",
+            "description": "This is a stylized house made of a large number of polygons made in Blender by artist Lola Pressman.",
+            "state": "In Progress",
+            "promoter": "Junior Ortega",
+            "creator": "Leila Liland",
+            "startDate": "April 12, 2023"
+        },
+
+        {
+            "id": "4",
+            "image": "/images/NeonCity.jpg",
+            "title": "Neon city",
+            "description": "Adriana Lorde high polygon neon cityscape showcases a vibrant futuristic city with detailed architecture, bright neon lights, and flying vehicles. His advanced texturing, realistic shading, and careful composition highlight his Blender expertise.",
+            "state": "Finish",
+            "promoter": "Eimy Roger",
+            "creator": "Adriana Lorde",
+            "startDate": "June 5, 2023"
+        },
+
+        {
+            "id": "5",
+            "image": "/images//PlayerModel5.jpg",
+            "title": "Stylized Character",
+            "description": "This is a stylized character created in Blender by our collaborator Willian Lin. The design features unique proportions and expressive details, showcasing Willian's skill in character modeling and animation. The use of vibrant colors and dynamic poses highlights his creativity and technical expertise in bringing imaginative designs to life.",
+            "state": "Starting",
+            "promoter": "Guillermo Ortiz",
+            "creator": "Nelson Fernando",
+            "startDate": "July 10, 2023"
+        }
+    ]
+}

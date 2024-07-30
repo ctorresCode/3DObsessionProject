@@ -5,15 +5,17 @@
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background: #fff;
-  color: white;
+  color: black;
   text-align: center;
   min-height: 100vh;
 }
 
+
 p{
-  padding:60px 0;
   color:#000;
 }
+
+
 footer{
   background-color:#50B498;
 }

@@ -78,7 +78,7 @@
     </div>
     <!-- End Slider -->
 
-    <div class="flex flex-col sm:flex-row container mx-auto mt-5 p-6 sm:justify-center mt-8 md:border md:shadow-xl md:w-[800px] md:h-[110px]">
+    <div class="flex flex-col sm:flex-row container mx-auto mt-5 p-6 sm:justify-center mt-[80px] md:border md:shadow-xl md:w-[800px] md:h-[110px]">
       <div class="sm:col-span-3 sm:px-5 mb-3 md:ml-[-20px]">
         <div class="mt-2">
           <select id="country" name="country" autocomplete="country-name" class=" p-3 md:p-3 block w-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
@@ -105,14 +105,13 @@
     <div>
       <h3 class="text-xl text-black font-bold md:mt-10">Project List</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
-          
+        <div id="1" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart()">
           <img class="w-full h-auto rounded-t-xl" src="/images/TvModel.jpg" alt="Card Image">
           <div class="p-4 mb-3">
-            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
               Old TV 1940
             </h3>
-            <p class="p-0 text-start">
+            <p id="description" class="p-0 text-start">
               This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
             </p>
           </div>
@@ -121,13 +120,13 @@
           </div>
         </div>
 
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+        <div id="2" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer">
           <img class="w-full h-auto rounded-t-xl" src="/images/LowPolyModel2.jpg" alt="Card Image">
           <div class="p-4 mb-3">
-            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
               Low poly landscape
             </h3>
-            <p class="p-0 text-start">
+            <p id="description" class="p-0 text-start">
               This is a low polygon landscape made in blender by our collaborator Junior Mersel.
             </p>
           </div>
@@ -136,13 +135,13 @@
           </div>
         </div>
 
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+        <div id="3" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer">
           <img class="w-full h-auto rounded-t-xl" src="/images/HouseModel3.jpg" alt="Card Image">
           <div class="p-4 mb-3">
-            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
               Stylized house
             </h3>
-            <p class="p-0 text-start">
+            <p id="description" class="p-0 text-start">
               This is a stylized house made of a large number of polygons made in Blender by artist Lola Pressman.
             </p>
           </div>
@@ -151,13 +150,13 @@
           </div>
         </div>
 
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+        <div id="4" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer">
           <img class="w-full h-auto rounded-t-xl" src="/images/NeonCity.jpg" alt="Card Image">
           <div class="p-4 mb-3">
-            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
               Neon city
             </h3>
-            <p class="p-0 text-start">
+            <p id="description" class="p-0 text-start">
               High polygon neon city made in Blender by our collaborator Markus Jason.
             </p>
           </div>
@@ -166,13 +165,13 @@
           </div>
         </div>
 
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+        <div id="5" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer">
           <img class="w-full h-auto rounded-t-xl" src="/images//PlayerModel5.jpg" alt="Card Image">
           <div class="p-4 mb-3">
-            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
               Stylized character
             </h3>
-            <p class="p-0 text-start">
+            <p id="description" class="p-0 text-start">
               This is a stylized character made in Blender by our collaborator Willian Lin.
             </p>
           </div>
@@ -182,13 +181,13 @@
         </div>
 
 
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+        <div id="6" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer">
           <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
           <div class="p-4 mb-3">
-            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
               Old TV 1940
             </h3>
-            <p class="p-0 text-start">
+            <p id="description" class="p-0 text-start">
               This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
             </p>
           </div>
@@ -197,13 +196,13 @@
           </div>
         </div>
 
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+        <div id="7" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer">
           <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
           <div class="p-4 mb-3">
-            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
               Old TV 1940
             </h3>
-            <p class="p-0 text-start">
+            <p id="description" class="p-0 text-start">
               This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
             </p>
           </div>
@@ -212,13 +211,13 @@
           </div>
         </div>
 
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+        <div id="8" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer">
           <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
           <div class="p-4 mb-3">
-            <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
               Old TV 1940
             </h3>
-            <p class="p-0 text-start">
+            <p id="description" class="p-0 text-start">
               This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
             </p>
           </div>
@@ -228,7 +227,7 @@
         </div>
 
 
-        <div class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5">
+        <div id="9" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer">
           <img class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
@@ -245,17 +244,14 @@
       </div>
     </div>
 
-   
     <div class="relative">
       <button type="submit" class="bg-[#ffc8004e] w-auto h-14 px-10 my-20 sm:px-5 py-2 text-lg text-black font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Load more projects</button>
     </div>
       
 
-
-   
-    
     <main-footer></main-footer>
   <script src="index.js"></script>
+  <script src="cartas.js"></script>
 
   </body>
 </html>
