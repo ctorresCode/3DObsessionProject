@@ -42,7 +42,7 @@ class Header extends HTMLElement {
         </button>
       </div>
       <div class="flex flex-1 items-center justify-end sm:items-stretch sm:justify-start">
-        <span class="pr-3 mt-1 text-xl font-bold">3D Obsession</span>
+        <span class="pr-3 mt-1 text-xl font-bold text-white">3D Obsession</span>
         <div class="hidden md:block md:ml-[325px] lg:ml-[550px]">
           <div class="flex">
             <!-- Current: "bg-gray-900 text-white", Default: "text-white hover:bg-gray-700 hover:text-white" -->
