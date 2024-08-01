@@ -1,0 +1,133 @@
+{
+    "humanCards":[
+        {
+           "id": 1,
+           "position": "CEO-Founder Founder of 3D Obsession",
+           "namesurname": "Carlos Torres",
+           "image": "/images/Carlos Torres.png",
+           "description": "Carlos Torres, a young man at heart with a passion for computing, studied software engineering at APEC University in the Dominican Republic. He has worked at companies such as Google, Meta, Microsoft and many more. Currently, he is the creator of the company 3D Obsession, which is responsible for providing 3D models for companies or people, made by professionals in the area.",
+           "DNI": "12345678BF",
+           "name": "Carlos Rafael Torres Graciano",
+           "phone": "809-712-7432",
+           "email": "crtorrescode@gmail.com",
+           "dateofhire": "N/A"
+        },
+
+        {
+           "id": 2,
+           "position": "Graphic designer and 3D modeling expertn",
+           "namesurname": "Adriana Lorde",
+           "image": "/images/Adriana Lorde.png",
+           "description": "Adriana Lorde is a skilled graphic designer and 3D modeling expert, known for her visually stunning designs and lifelike models. She excels in using advanced shaders to enhance realism and impact, crafting intricate textures and lighting effects. Her creative vision and technical expertise make her a standout in her field.",
+           "DNI": "24681012AI",
+           "name": "Adriana Michell Lorde Jason",
+           "phone": "829-110-4252",
+           "email": "adrianalorde@gmail.com",
+           "dateofhire": "September 1, 2013"
+        },
+
+        {
+           "id": 3,
+           "position": "Full-Stack Programmer",
+           "namesurname": "Junior Ortega",
+           "image": "/images/Junior Ortega.png",
+           "description": "Junior Ortega is a skilled full-stack programmer with extensive expertise in both front-end and back-end development. His proficiency extends to 3D modeling and node management in Blender, where he excels at creating intricate and dynamic models. Junior's ability to seamlessly integrate programming with advanced 3D design showcases his versatility and technical skill, making him a valuable asset in developing comprehensive digital solutions.",
+           "DNI": "123451011JHI",
+           "name": "Junior Hernández Ortega Ramirez",
+           "phone": "809-545-220",
+           "email": "juniorortega@gmail.com",
+           "dateofhire": "December 31, 2017"
+        },
+
+        {
+           "id": 4,
+           "position": "Design department manager",
+           "namesurname": "Emma Myers",
+           "image": "/images/Emma Myers.png",
+           "description": "Emma Myers, our Design Department leader, has over a decade of experience in innovative design. With a Graphic Design degree from the Art Institute and certifications in UX/UI and project management, her strategic vision has led to award-winning work. She fosters a creative, collaborative environment and stays ahead of industry trends. In her free time, Emma explores design trends, attends conferences, and mentors young designers.",
+           "DNI": "13456789EF",
+           "name": "Emma Houston Myers Epirasi",
+           "phone": "809-550-1434",
+           "email": "emmamyers@gmail.com",
+           "dateofhire": "November 5, 2019"
+        },
+
+        {
+           "id": 5,
+           "position": "Back-end Programmer",
+           "namesurname": "Guillermo Ortiz",
+           "image": "/images/GuillermoOrtiz.png",
+           "description": "Guillermo Ortiz is an expert Back-End Programmer known for creating robust, scalable server-side solutions. He is also skilled in 3D modeling with Blender and Maya, enabling him to produce detailed assets. His blend of back-end development and advanced 3D modeling makes him a valuable asset, delivering innovative solutions while staying ahead of industry trends.",
+           "DNI": "12378912GH",
+           "name": "Guillermo Manuel Ortiz Dominguez",
+           "phone": "809-410-1022",
+           "email": "guillermoortiz@gmail.com",
+           "dateofhire": "December 2, 2015"
+        },
+
+        {
+            "id": 6,
+            "position": "Front-end programmer",
+            "namesurname": "Leida Liland",
+            "image": "/images/Leida Liland.png",
+            "description": "Leida Liland is a talented Front-End Programmer with expertise in creating responsive web interfaces and integrating 3D modeling. Her unique skill set combines modern web technologies with advanced 3D design, ensuring her projects are innovative and visually compelling. Committed to excellence, Leida stays ahead of industry trends and continuously seeks to enhance her work.",
+            "DNI": "15678912HI",
+            "name": "Leida Rusber Liland Johnson",
+            "phone": "809-130-0024",
+            "email": "leidaliland@gmail.com",
+            "dateofhire": "August 10, 2018"
+         },
+
+         {
+            "id": 7,
+            "position": "Back-end Programmer",
+            "namesurname": "Nelson Fernando",
+            "image": "/images/Nelson Fernando.png",
+            "description": "Nelson Fernando is a proficient back-end programmer with a strong background in 2D and 3D modeling. He combines his programming expertise with advanced skills in digital design, enabling him to develop robust back-end systems while creating detailed and dynamic models. His ability to integrate complex algorithms with high-quality visual elements highlights his versatility and technical prowess in both software development and digital artistry.",
+            "DNI": "3681215HJ",
+            "name": "Nelson Jackson Fernando Rodriguez",
+            "phone": "829-310-1256",
+            "email": "nelsonfernando@gmail.com",
+            "dateofhire": "September 22, 2010"
+         },
+
+         {
+            "id": 8,
+            "position": "Technical leader of design department",
+            "namesurname": "Eimy Roger",
+            "image": "/images/Eimy Roger.png",
+            "description": "Eimy Roger is the Technical Leader of the Design Department, renowned for her expertise in 3D animations. With a deep understanding of animation principles and cutting-edge techniques, she excels in bringing characters and scenes to life with exceptional fluidity and detail. Eimy's leadership and technical skills drive the creative vision of the department, ensuring high-quality and innovative animation solutions that push the boundaries of visual storytelling..",
+            "DNI": "127891012FI",
+            "name": "Eimy Noemi Roger Gabriela",
+            "phone": "809-123-1920",
+            "email": "Eimyroger@gmail.com",
+            "dateofhire": "February 1, 2010"
+         },
+
+         {
+            "id": 9,
+            "position": "Technical leader of technology department",
+            "namesurname": "Yamir Alisha",
+            "image": "/images/Yamir Alisha.png",
+            "description": "Yamir Alisha is the Technical Leader of the Technology Department, known for her exceptional leadership and technical acumen. She oversees the development and implementation of advanced technological solutions, ensuring optimal performance and innovation across projects. Yamir's expertise in managing complex systems and her strategic vision drive the department's success, enabling the seamless integration of cutting-edge technology to meet and exceed organizational goals.",
+            "DNI": "23167489YH",
+            "name": "Yamir Khabi Alisha Huby",
+            "phone": "829-221-1010",
+            "email": "yamiralisha@gmail.com",
+            "dateofhire": "july 4, 2009"
+         },
+
+         {
+            "id": 10,
+            "position": "Human resources manager",
+            "namesurname": "Jennifer Natasha",
+            "image": "/images/Jennifer Natasha.png",
+            "description": "Jennifer Natasha is an expert Human Resources Manager known for optimizing workforce management and fostering a positive work culture. She excels in talent acquisition, employee relations, and strategic HR planning, aligning HR practices with organizational goals. Her skills in developing effective HR policies enhance employee growth and workplace satisfaction.",
+            "DNI": "12351112JM",
+            "name": "Jennifer Prada Natasha William",
+            "phone": "809-122-5555",
+            "email": "jennifernatasha@gmail.com",
+            "dateofhire": "March 2, 2020"
+         }
+    ]
+}
