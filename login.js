@@ -16,18 +16,8 @@ function login(){
     else{
         alert("Ha ingresado datos no validos");
     }
-
-    /*
-    if(username.length >= 5 && password.length >= 5){
-        window.location.href = "index.html"
-        localStorage.setItem('username', JSON.stringify(username));
-        localStorage.setItem('password', JSON.stringify(password));
-    }
-    else{
-        alert("Ha ingresado datos no validos");
-    }
-        */
 }
+
 
 function register(){
     let username = document.getElementById('username').value;
