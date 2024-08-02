@@ -10,61 +10,80 @@
 </head>
 <body>
     <main-header></main-header>
-    <div class="flex flex-col text-black shadow-md shadow-gray-600 m-5 p-5">
+    <div class="flex flex-col text-black shadow-md shadow-gray-600 m-5 p-5 md:justify-center md:items-center">
         <h1 class="text-xl font-semibold text-left mb-3">Add New Project</h1>
-        <hr class="w-[300px] md:w-[1200px]">
-        <h1 class="text-left text-xl mt-4">Name task</h1>
-        <input class="border h-9 mt-2 w-[340px] md:w-[500px]">
-        <h1 class="text-left text-xl mt-6 md:mt-8">Description task</h1>
+        <hr class="w-[300px] md:w-[1863px] md:mt-2">
+        <h1 class="text-left text-xl mt-4">Name project</h1>
+        <input id="nameProject"  class="border h-9 mt-2 w-[340px] md:w-[500px]">
+        <h1 class="text-left text-xl mt-6 md:mt-8">Description project</h1>
         <textarea class="border h-40 w-[340px] mt-2 md:mt-2 md:w-[500px] md:h-[190px]" id="Descripcion"></textarea>
         <div class="">
-            <h1 class="text-left text-xl mt-7">Photo</h1>
-            <img>
+            <h1 class="text-left text-xl mt-7 md:text-center">Photo</h1>
+            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="multiple_files">Upload multiple files</label>
+            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="multiple_files" type="file" multiple>
+
         </div>
        <hr class="mt-10">
 
        <div class="">
-        <h1 class="text-xl text-center mt-32 text-left md:mb-20 md:text-4xl">Tasks</h1>
+        <h1 class="text-xl text-center mt-32 text-left md:mb-20 md:text-4xl md:mt-20">Tasks</h1>
        </div>
         
-        <div class="bg-[#cbcbcb40] flex flex-col mt-5 p-4 h-[990px] md:p-[75px] md:w-[1820px] md:h-[990px]" id="Task"> 
+        <div class="bg-[#cbcbcb40] flex flex-col mt-5 p-4 h-[990px] md:p-[75px] md:w-[1000px] md:h-[990px] md:justify-center md:justify-center md:items-center" id="Task"> 
             <p class="text-lg text-left mt-2 md:text-2xl">Number task<span class="text-red-600">*</span></p>
-            <input class="w-[313px] h-10 mt-3 md:h-[190px] md:w-[500px] md:p-2" type="number">
+            <input id="numberTask" class="w-[313px] h-10 mt-3 md:h-[190px] md:w-[500px] md:p-2" type="number">
             <p class="text-lg text-left mt-6 md:text-2xl">Name task<span class="text-red-600">*</span></p>
-            <input class="w-[313px] h-10 mt-3 md:h-[190px] md:w-[500px] md:p-2" type="text">
+            <input id="nameTask" class="w-[313px] h-10 mt-3 md:h-[190px] md:w-[500px] md:p-2" type="text">
             <p class="text-lg text-left mt-6 md:text-2xl">Description task<span class="text-red-600">*</span></p>
-            <textarea class="w-[313px] h-40 mt-4 md:h-[500px] md:w-[500px]"></textarea>
+            <textarea id="descriptionTask" class="w-[313px] h-40 mt-4 md:h-[400px] md:w-[500px]"></textarea>
             
            
             <p class="text-lg text-left mt-6 md:text-2xl" x-on:loadstart="text-left">Type task<span class="text-red-600">*</span></p>
-            <select class="w-[313px] h-10 mt-4 md:h-[120px] md:w-[500px] md:text-2xl md:p-2">
+            <select id="typeTask" class="w-[313px] h-10 mt-4 md:h-[120px] md:w-[500px] md:text-2xl md:p-2">
                 <option>Type</option>
                 <option>Canada</option>
                 <option>Mexico</option>
             </select>
             <p class="text-lg text-left mt-5 md:text-2xl">Estimated start date<span class="text-red-600">*</span></p>
-            <input class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2 " type="date">
+            <input id="estimatedTask" class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2 " type="date">
             <p class="text-lg text-left mt-5 md:text-2xl">Actual start date<span class="text-red-600">*</span></p>
-            <input class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2" type="date">
+            <input id="actualStartDate" class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2" type="date">
             <p class="text-lg text-left mt-5 md:text-2xl">Estimated duration (hours)<span class="text-red-600">*</span></p>
-            <input class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2 " type="number">
+            <input id="estimatedDuration" class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2 " type="number">
             <p class="text-lg text-left mt-5 md:text-2xl">Actual duration (hours)<spanc class="text-red-600">*</spanc></p>
-            <input class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2" type="number">
+            <input id="actualDuration" class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2" type="number">
         </div>
 
         <div class="">
-            <button class=" mt-10 text-2xl bg-[#468585] w-[230px] h-14 text-white">document</button>
+            <button class=" mt-10 text-2xl bg-[#468585] w-[230px] h-14 text-white" onclick="genPDF()">document</button>
         </div>
         <div class="mt-12">
-            <button class="text-4xl text-[#50B498]">+</button>
+            <button id="plusTask" class="text-4xl text-[#50B498]" onclick="repetirDiv()">+</button>
+        </div>
+
+        <div id="clonecontainer">
+        
         </div>
     </div>
+
 
     <div class="mt-10">
         <button class="bg-[#468585] text-lg font-medium w-[190px] p-2 mt-10">Create project</button>
     </div>
 
+
     <main-footer></main-footer>
     
+    <script type="text/javascript" src="generarPDF.js"></script>
+    <script src="MuchTask.js"></script>
+    <script type="text/javascript">
+        function genPDF(){
+            var doc=new jsPDF();
+            let nameProject = document.getElementById('nameProject').value;
+            doc.text(20,20,'Name Project');
+            doc.text(20,40, nameProject);
+            doc.save(nameProject);
+        }
+    </script>
 </body>
 </html>

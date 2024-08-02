@@ -23,7 +23,8 @@ async function getData(id){
             let state = `${item.state}`;
             let promoter = `${item.promoter}`;
             let creator = `${item.creator}`;
-            let startDate = `${item.startDate}`
+            let startDate = `${item.startdate}`;
+            let modelImages = `${item.modelImages}`;
             console.log(item);
 
             document.querySelector("#image").src = imageUrl;
@@ -32,7 +33,17 @@ async function getData(id){
             document.querySelector("#state").innerHTML = state;
             document.querySelector("#promoter").innerHTML = promoter;
             document.querySelector("#creator").innerHTML = creator;
-            
+            document.querySelector("#startdate").innerHTML = startDate;
+            document.querySelector("#modelImage").src = modelImages;
+
+
+            /*
+            modelImages.map(item =>{
+                const imgElement = document.createElement('img');
+                const container = document.getElementById('modelImage');
+                container.appendChild(imgElement);
+            });
+            */
         });  
 
     }

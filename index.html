@@ -78,34 +78,40 @@
     </div>
     <!-- End Slider -->
 
-    <div class="flex flex-col sm:flex-row container mx-auto mt-5 p-6 sm:justify-center mt-[80px] md:border md:shadow-xl md:w-[800px] md:h-[110px]">
+    <div class="flex flex-col sm:flex-row container mx-auto mt-5 p-6 sm:justify-center mt-[10px] md:border md:shadow-xl md:w-[800px] md:h-[110px] md:mt-12">
       <div class="sm:col-span-3 sm:px-5 mb-3 md:ml-[-20px]">
-        <div class="mt-2">
+        <div class="mt-0">
+          <!--
           <select id="country" name="country" autocomplete="country-name" class=" p-3 md:p-3 block w-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-            <option>Category project</option>
-            <option>Canada</option>
-            <option>Mexico</option>
+            <option>Category Project</option>
+            <option>Product Modeling</option>
+            <option>Simulation and Analystic</option>
+            <option>Architectural Visualization</option>
+            <option>Recreation and Art</option>
           </select>
+          -->
         </div>
       </div>
 
-      <div class="sm:col-span-3 sm:px-5 mb-3">
-        <div class="mt-2">
-          <select id="country" name="country" autocomplete="country-name" class=" p-3 md:p-3 block w-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+      <div class="sm:col-span-3 sm:px-5 mb-5">
+        <div class="mt-0">
+          <select id="stylesSelect" name="country" autocomplete="country-name" class=" p-3 md:p-3 block w-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6 md:mt-2 md:w-[200px]">
             <option>Styles project</option>
-            <option>Canada</option>
-            <option>Mexico</option>
+            <option>Low Poly</option>
+            <option>Realistic</option>
+            <option>Stylized</option>
+            <option>Textured</option>
           </select>
         </div>
       </div>
-      <button type="submit" class="bg-[#468585] h-12 sm:px-5 py-2 text-lg font-medium text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:mt-2 md:w-[140px] md:ml-5">Search</button>
+      <button type="submit" id="filterButton" class="bg-[#468585] h-12 sm:px-5 py-2 text-lg font-medium text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:mt-2 md:w-[140px] md:ml-5">Search</button>
     </div>
 
     <!--Cartas-->
-    <div>
-      <h3 class="text-xl text-black font-bold md:mt-10">Project List</h3>
+    <div data-category="Styles project">
+      <h3 class="text-xl text-black font-bold md:mt-10">Project List <a class="text-[#50B498] text-2xl" href="projectmanagement.html">+</a></h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <div id="1" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
+        <div id="1" data-category="Realistic" class=" card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
           <img id="image" class="w-full h-auto rounded-t-xl" src="/images/TvModel.jpg" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
@@ -115,12 +121,12 @@
               This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
             </p>
           </div>
-          <div class="flex justify-end">
+          <div class="flex justify-end md:-mt-6">
             <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Finish</span>
           </div>
         </div>
 
-        <div id="2" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
+        <div id="2" data-category="Low Poly"  class="card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
           <img id="image" class="w-full h-auto rounded-t-xl" src="/images/LowPolyModel2.jpg" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
@@ -135,7 +141,7 @@
           </div>
         </div>
 
-        <div id="3" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
+        <div id="3" data-category="Stylized" class="card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
           <img id="image" class="w-full h-auto rounded-t-xl" src="/images/HouseModel3.jpg" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
@@ -150,7 +156,7 @@
           </div>
         </div>
 
-        <div id="4" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
+        <div id="4" data-category="Realistic" class="card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
           <img id="image" class="w-full h-auto rounded-t-xl" src="/images/NeonCity.jpg" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
@@ -161,11 +167,11 @@
             </p>
           </div>
           <div class="flex justify-end">
-            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Finish</span>
           </div>
         </div>
 
-        <div id="5" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
+        <div id="5" data-category="Textured" class="card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
           <img id="image" class="w-full h-auto rounded-t-xl" src="/images//PlayerModel5.jpg" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
@@ -176,81 +182,82 @@
             </p>
           </div>
           <div class="flex justify-end">
-            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#8BD0F9] text-[#0C9FF5] m-4 ">Starting</span>
           </div>
         </div>
 
 
-        <div id="6" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
-          <img id="image" class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+        <div id="6" data-category="Realistic" class="card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
+          <img id="image" class="w-full h-auto rounded-t-xl" src="images/Mercedes benz Model.jpg" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
-              Old TV 1940
+              Mercedes Benz
             </h3>
             <p id="description" class="p-0 text-start">
-              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+              High polygon Mercedez Benz made in Blender by our collaborator.
             </p>
           </div>
           <div class="flex justify-end">
-            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Finish</span>
           </div>
         </div>
 
-        <div id="7" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
-          <img id="image" class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+        <div id="7" data-category="Low Poly" class="card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
+          <img id="image" class="w-full h-auto rounded-t-xl md:h-[250px]" src="images/LowPolyModel7.jpg" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
-              Old TV 1940
+              Retro 80s Kids Room Low-Poly
             </h3>
             <p id="description" class="p-0 text-start">
-              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+              This is a retro room from the 80s. It is low poly so that it does not consume much and can be used in video games.
+            </p>
+          </div>
+          <div class="flex justify-end md:-mt-7">
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#FFDF8E] text-[#B48100] m-4 ">In progress</span>
+          </div>
+        </div>
+
+        <div id="8" data-category="Stylized" class="card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
+          <img id="image" class="w-full h-auto rounded-t-xl md:h-[260px]" src="images/StylizedModel2.jpeg" alt="Card Image">
+          <div class="p-4 mb-3">
+            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
+              Fisherman's House
+            </h3>
+            <p id="description" class="p-0 text-start">
+              This project is a stylized house created in Blender.
             </p>
           </div>
           <div class="flex justify-end">
-            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
-          </div>
-        </div>
-
-        <div id="8" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
-          <img id="image" class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
-          <div class="p-4 mb-3">
-            <h3 id="title" class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
-              Old TV 1940
-            </h3>
-            <p id="description" class="p-0 text-start">
-              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
-            </p>
-          </div>
-          <div class="flex justify-end">
-            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#8BD0F9] text-[#0C9FF5] m-4 ">Starting</span>
           </div>
         </div>
 
 
-        <div id="9" class="flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer" onclick="loadCart(event)">
-          <img id="image" class="w-full h-auto rounded-t-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80" alt="Card Image">
+        <div id="9" data-category="Textured" class="card flex flex-col bg-white shadow-lg shadow-gray-400 max-w-[500px] rounded-x m-5 hover:cursor-pointer md:h-[450px]" onclick="loadCart(event)">
+          <img id="image" class="w-full h-auto rounded-t-xl" src="images/TexturedViking2.jpg" alt="Card Image">
           <div class="p-4 mb-3">
             <h3 class="text-lg font-bold text-gray-800 text-start pt-3 mb-3">
-              Old TV 1940
+              Textured Viking
             </h3>
             <p class="p-0 text-start">
-              This project is an old TV from 1940, it was made with many polygons, it was developed by our employee Kandry Luck.
+              This is a textured project of a Viking humanoid that can be used in video games.
             </p>
           </div>
           <div class="flex justify-end">
-            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Badge</span>
+            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-xs font-medium bg-[#0080734a] text-[#008073] m-4 ">Finish</span>
           </div>
         </div>
       </div>
     </div>
 
     <div class="relative">
-      <button type="submit" class="bg-[#ffc8004e] w-auto h-14 px-10 my-20 sm:px-5 py-2 text-lg text-black font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Load more projects</button>
+      <!--<button type="submit" class="bg-[#ffc8004e] w-auto h-14 px-10 my-20 sm:px-5 py-2 text-lg text-black font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Load more projects</button>-->
     </div>
       
 
     <main-footer></main-footer>
   <script src="index.js"></script>
   <script src="cartas.js"></script>
+  <script src="filterData.js"></script>
   </body>
 </html>

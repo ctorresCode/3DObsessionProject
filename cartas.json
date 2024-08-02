@@ -11,28 +11,23 @@
             "startdate": "November 23, 2023",
             "modelImages": [
                 {
-                    "src": "",
-                    "alt": ""
+                    "src": "/images/tvImages1.png"
                 },
 
                 {
-                    "src": "",
-                    "alt": ""
+                    "src": "/images/tvImages2.png"
                 },
 
                 {
-                    "src": "",
-                    "alt": ""
+                    "src": "/images/tvImages3.png"
                 },
 
                 {
-                    "src": "",
-                    "alt": ""
+                    "src": "/images/tvImages4.png"
                 },
 
                 {
-                    "src": "",
-                    "alt": ""
+                    "src": "/images/tvImages5.png"
                 }
             ]
         },
@@ -44,7 +39,12 @@
             "state": "Starting",
             "promoter": "Adriana Lorde",
             "creator": "Guillermo Ortiz",
-            "startDate": "January 2, 2023"
+            "startdate": "January 2, 2023",
+            "modelImages": [
+                {
+                    "src": "/images/LowPolyImageModel.png"
+                }
+            ]
         },
 
         {
@@ -55,7 +55,7 @@
             "state": "In Progress",
             "promoter": "Junior Ortega",
             "creator": "Leila Liland",
-            "startDate": "April 12, 2023"
+            "startdate": "April 12, 2023"
         },
 
         {
@@ -66,7 +66,7 @@
             "state": "Finish",
             "promoter": "Eimy Roger",
             "creator": "Adriana Lorde",
-            "startDate": "June 5, 2023"
+            "startdate": "June 5, 2023"
         },
 
         {
@@ -77,7 +77,51 @@
             "state": "Starting",
             "promoter": "Guillermo Ortiz",
             "creator": "Nelson Fernando",
-            "startDate": "July 10, 2023"
+            "startdate": "July 10, 2023"
+        },
+
+        {
+            "id": "6",
+            "image": "images/Mercedes benz Model.jpg",
+            "title": "Mercedes Benz",
+            "description": "High polygon Mercedez Benz made in Blender by our collaborator.",
+            "state": "Finish",
+            "promoter": "Eimy Roger",
+            "creator": "Carlos Torres",
+            "startdate": "February 10, 2021"
+        },
+
+        {
+            "id": "7",
+            "image": "images/LowPolyModel7.jpg",
+            "title": "Fisherman's House",
+            "description": "This is a retro room from the 80s. It is low poly so that it does not consume much and can be used in video games.",
+            "state": "In progress",
+            "promoter": "Nelson Fernando",
+            "creator": "Yamir Alisha",
+            "startdate": "September 1, 2024"
+        },
+
+        {
+            "id": "8",
+            "image": "images/StylizedModel2.jpeg",
+            "title": "Fisherman's House",
+            "description": "This project is a stylized house created in Blender.",
+            "state": "Starting",
+            "promoter": "Yamir Alisha",
+            "creator": "Emma Myers",
+            "startdate": "August 5, 2024"
+        },
+
+        {
+            "id": "9",
+            "image": "/images//TexturedViking2.jpg",
+            "title": " Textured Viking",
+            "description": "This is a textured project of a Viking humanoid that can be used in video games.",
+            "state": "Finish",
+            "promoter": "Junior Ortega",
+            "creator": "Leida Liland",
+            "startdate": "January 3, 2024"
         }
     ]
 }
