@@ -21,7 +21,6 @@
             <h1 class="text-left text-xl mt-7 md:text-center">Photo</h1>
             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="multiple_files">Upload multiple files</label>
             <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="multiple_files" type="file" multiple>
-
         </div>
        <hr class="mt-10">
 
@@ -41,8 +40,14 @@
             <p class="text-lg text-left mt-6 md:text-2xl" x-on:loadstart="text-left">Type task<span class="text-red-600">*</span></p>
             <select id="typeTask" class="w-[313px] h-10 mt-4 md:h-[120px] md:w-[500px] md:text-2xl md:p-2">
                 <option>Type</option>
-                <option>Canada</option>
-                <option>Mexico</option>
+                <option>Básica</option>
+                <option>Técnica</option>
+                <option>UX</option>
+                <option>Soporte/Administración</option>
+                <option>Seguridad</option>
+                <option>Integración</option>
+                <option>Regresión</option>
+                <option>Validación</option>
             </select>
             <p class="text-lg text-left mt-5 md:text-2xl">Estimated start date<span class="text-red-600">*</span></p>
             <input id="estimatedTask" class="w-[313px] h-10 mt-4 md:h-[190px] md:w-[500px] md:p-2 " type="date">
@@ -68,7 +73,7 @@
 
 
     <div class="mt-10">
-        <button class="bg-[#468585] text-lg font-medium w-[190px] p-2 mt-10">Create project</button>
+        <button class="bg-[#468585] text-lg font-medium w-[190px] p-2 mt-10 text-white">Create project</button>
     </div>
 
 
@@ -80,8 +85,59 @@
         function genPDF(){
             var doc=new jsPDF();
             let nameProject = document.getElementById('nameProject').value;
+            let nameTask = document.getElementById('nameTask').value;
+            let numberTask = document.getElementById('numberTask').value;
+            let descriptionTask = document.getElementById('descriptionTask').value;
+            let typeTask = document.getElementById('typeTask').value;
+            let estimatedStartDate = document.getElementById('estimatedTask').value;
+            let actualStartDate = document.getElementById('actualStartDate').value;
+            let estimatedDuration = document.getElementById('estimatedDuration').value;
+            let actualDuration = document.getElementById('actualDuration').value;
+            let images = document.getElementById('multiple_files').value;
+            doc.setFont('helvetica', 'bold');
             doc.text(20,20,'Name Project');
-            doc.text(20,40, nameProject);
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,30, nameProject);
+            
+            doc.setFont('helvetica', 'bold');
+            doc.text(20,40, 'Name task');
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,50, nameTask);
+
+            doc.setFont('helvetica', 'bold');
+            doc.text(20, 60, 'Number Task');
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,70, numberTask);
+
+            doc.setFont('helvetica', 'bold');
+            doc.text(20,80, 'Description task');
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,90, descriptionTask);
+
+            doc.setFont('helvetica', 'bold');
+            doc.text(20,100, 'Type task');
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,110, typeTask);
+
+            doc.setFont('helvetica', 'bold');
+            doc.text(20,120, 'Estimated start date');
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,130, estimatedStartDate);
+
+            doc.setFont('helvetica', 'bold');
+            doc.text(20,140, 'Actual start date');
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,150, estimatedStartDate);
+
+            doc.setFont('helvetica', 'bold');
+            doc.text(20,160, 'Estimated duration (hours)');
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,170, estimatedDuration);
+
+            doc.setFont('helvetica', 'bold');
+            doc.text(20,180, 'Duration actual (hours)');
+            doc.setFont('helvetica', 'normal');
+            doc.text(20,190, actualDuration);
             doc.save(nameProject);
         }
     </script>
