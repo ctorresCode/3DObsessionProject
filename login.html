@@ -11,12 +11,13 @@
     <div class="flex flex-col justify-center items-center h-screen">
         <h1 class="text-[#468585] text-4xl mb-8 md:text-5xl">Login</h1>
         <input type="text" name="username" id="username_id" class="block w-64 h-12  border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 md:text-xl md:w-80" placeholder="Username">
-        <input type="text" name="password" id="password_id" class="block w-64 h-12 mt-7  border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 md:text-xl md:w-80" placeholder="Password">
-        <button type="submit" class="bg-[#468585] w-64 h-14 mt-7 text-xl font-poppins text-white md:text-2xl md:w-80 md:h-16">Sign in</button>
+        <input type="password" name="password" id="password_id" class="block w-64 h-12 mt-7  border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 md:text-xl md:w-80" placeholder="Password">
+        <button id="btn" type="submit" class="bg-[#468585] w-64 h-14 mt-7 text-xl font-poppins text-white md:text-2xl md:w-80 md:h-16" onclick="login()">Sign in</button>
         <div class="flex justify-between mt-6">
-            <a href="Register.html" class="text-sm mr-7 text-gray-500 md:text-base ">You don't have an<br> account, register</a>
+            <a href="register.html" class="text-sm mr-7 text-gray-500 md:text-base ">You don't have an<br> account, register</a>
             <a href="Register.html" class="text-sm text-gray-500 md:text-base md:ml-10">¿Forgot Password?</a>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>

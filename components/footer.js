@@ -37,7 +37,7 @@ class Footer extends HTMLElement {
 
     <div class="flex flex-col text-right text-white font-light mr-[100px] relative -top-[103px] md:mt-[120px] md:text-center">
       <h1 class="text-2xl md:text-3xl">Development by</h1>
-      <a class="text-2xl md:text-3xl font-bold mr-3" href="https://github.com/ctorresCode">crtorrescode</a>
+      <a class="text-2xl md:text-3xl font-bold mr-3 w-50" href="https://github.com/ctorresCode">crtorrescode</a>
       <p class="text-[13px] md:text-3xl mt-2 -mr-10">Copyright © 2024 3legant. All rights reserved</p>
     </div> 
     
